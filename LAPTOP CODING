@@ -33,7 +33,7 @@ public class Laptop {
 		salvage_valueDell +=DepreciationDell(salvage_value);
 		
 		Salvagevalue();
-		salvage_values = salvage_valueAsus+salvage_valueApple+salvage_valueAcer+salvage_valueAcer+salvage_valueDell;
+		salvage_values = salvage_valueAsus+salvage_valueApple+salvage_valueAcer+salvage_valueHp+salvage_valueDell;
 		sv(salvage_valueAsus,salvage_valueApple,salvage_valueAcer,salvage_valueHp,salvage_valueDell,salvage_values);
 		
 		NewLaptop();

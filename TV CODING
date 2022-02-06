@@ -258,3 +258,52 @@ public class Tv {
 	}
 
 }
+
+Output :
+
+WELCOME TO TV PACKAGE SYSTEM
+Hello my dear customer! Welcome to Astro customer service.
+I will provide the information related to Astro packages based on your preference.
+
+Enter 1 for Primary Pack
+Enter 2 for Entertainment Pack
+Enter 3 for Broadband Pack
+Enter 4 for Platinum Pack
+
+Enter your package number here:- 
+4
+	 ASTRO PLATINUM PACK
+*Price = RM 195.00
+*Installation fee = RM 99.00
+*24 months subscription contract
+*Up to 145+ Channels
+*Astro Go accessible
+*Support UHD/4K Channel
+*Free Ultrabox Decoder Set
+
+My dearest customers, we have provided some discount for you in conjuction with your first time purchased with Astro such as: 
+-10% FIRST MONTH PURCHASE DISCOUNT for every package 
+-15% WOW DISCOUNT(for customers who skip deposit and paid fully payment)
+Here is your payment detail based on your package selected:
+For your information, we offer two payment methods along with certain discount
+
+METHOD 1: DEPOSIT AND MONTHLY PAYMENT FOR 2 YEARS SUBSCRIPTION CONTRACT
+
+ PACKAGE PRICE               = RM 195.0
+ INSTALLATION BILL           = RM 99.00 
+ ACTUAL  PRICE               = RM 4779.0
+ 10% FIRST MONTH DISCOUNT    = RM 19.5
+ TOTAL PRICE AFTER DISCOUNT  = RM 4759.5
+ DEPOSIT                     = RM 274.5
+ BALANCE                     = RM 4485.0
+ MONTHLY PAYMENT             = RM 195.0
+
+METHOD 2: FULLY PAYMENT FOR 2 YEARS SUBSCRIPTION CONTRACT 
+
+ ACTUAL PRICE                                                                  = RM 4779.0
+ 10% FIRST MONTH DISCOUNT                                                      = RM 19.5
+ 15% WOW DISCOUNT                                                              = RM 713.925
+ TOTAL PRICE AFTER DISCOUNT                                                    = RM 4045.575
+
+THANK YOU FOR CHOOSING OUR SERVICE.WE HOPE THIS CAN HELP YOU MAKE YOUR OWN DECISION.
+PLEASE CALL OUR ASTRO CENTRE TO MAKE FURTHER CONFIRMATION.

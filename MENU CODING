@@ -1,0 +1,86 @@
+package project;
+import java.util.Scanner;
+public class Menu {
+	public static Scanner sc = new Scanner(System. in );
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		userinfo();
+		system();
+		
+		 int option;
+	        do 
+	        {
+	            System.out.println("Menu ");
+	            System.out.println("1. INTERNET USAGE CALCULATION SYSTEM");
+	            System.out.println("2. MOBILE ACCESSORIES SYSTEM");
+	            System.out.println("3. LAPTOP DEPRECIATION SYSTEM");
+	            System.out.println("4. DETECTING RISK SYSTEM");
+	            System.out.println("5. TV PACKAGE SYSTEM");
+	            System.out.println("6. Exit");
+	            System.out.print("Please select an Option : ");
+	            option = sc.nextInt();
+	           
+	            switch (option) 
+	            {
+	                case 1:
+	                   Internet a = new Internet();
+	                   			a.main(args);
+	                    break;
+	                    
+	                case 2:
+	                   Mobile b = new Mobile();
+	                   			b.main(args);
+	                    break;
+	                case 3:
+	                   Laptop c = new Laptop();
+               					c.main(args);
+	                    break;
+	                case 4:
+	                	Satelit d = new Satelit();
+        							d.main(args);
+	                    break;       
+	                case 5:
+	                	Tv e = new Tv();
+		                   e.main(args);
+	                    break;   
+	                case 6:
+		                ty();
+	                    break;   
+	                default:
+	                	System.out.println("Please enter the correct number!");
+	                	break;
+	            }
+	        } while (option != 6);
+	}
+public static void userinfo() {
+	System.out.println("Please enter the following information");
+	System.out.print("Name: ");
+	String name = sc.nextLine();
+	System.out.print("IC: ");
+	String IC = sc.nextLine();
+	System.out.print("Phone number: ");
+	String phonenumber = sc.nextLine();
+	
+	System.out.println();
+	
+	String user[][]= {{"Name\t: ","IC\t: ","Phone number: "},
+						{name,IC,phonenumber}};
+	
+	System.out.println("This is your information!!!");
+	System.out.println(user[0][0]+user[1][0]);
+	System.out.println(user[0][1]+user[1][1]);
+	System.out.println(user[0][2]+user[1][2]);
+	System.out.println();
+	
+}
+
+public static void ty() {
+	System.out.println("Thank you! See you next time!!!");
+}
+public static void system() {
+	System.out.println("Welcome to Technology System");
+	System.out.println("This is our menu, please choose the services you want!");
+	System.out.println();
+}
+}

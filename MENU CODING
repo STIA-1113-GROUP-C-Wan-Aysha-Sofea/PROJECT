@@ -84,3 +84,144 @@ public static void system() {
 	System.out.println();
 }
 }
+
+Output :
+
+Please enter the following information
+Name: Toh
+IC: 010826
+Phone number: 016
+
+This is your information!!!
+Name	: Toh
+IC	: 010826
+Phone number: 016
+
+Welcome to Technology System
+This is our menu, please choose the services you want!
+
+Menu 
+1. INTERNET USAGE CALCULATION SYSTEM
+2. MOBILE ACCESSORIES SYSTEM
+3. LAPTOP DEPRECIATION SYSTEM
+4. DETECTING RISK SYSTEM
+5. TV PACKAGE SYSTEM
+6. Exit
+Please select an Option : 2
+
+                     **WELCOME DREAM MOBILE SHOP***
+Please enter the following information
+Name: Toh
+IC: 010826
+Phone number: 016
+--------------------------------------------------------------------------------
+                     **WELCOME DREAM MOBILE SHOP***
+--------------------------------------------------------------------------------
+We have these processor!
+1. Snapdragon 888 RM 2000.0
+2. Snapdragon 855 RM 800.0
+3. Exynos 2100    RM 800.0
+4. Kirin 9000     RM 1200.0
+Please select your mobile phone's processor: 1
+You choose Snapdragon 888 and the price processor is RM 2000.0
+
+We have these Ram!
+1. 4 GB RM 200.0
+2. 6 GB RM 400.0
+3. 8 GB RM 500.0
+Please select your mobile phone's ram: 1
+You choose 4 GB and the priceram is RM 200.0
+
+We have these storage!
+1. 32 GB RM 300.0
+2. 64 GB RM 400.0
+3. 128 GB RM 600.0
+4. 256 GB RM 800.0
+Please select your mobile phone's storage: 2
+You choose 64 GB and the pricestorage is RM 400.0
+
+We have these camera!
+1. 16 MP RM 100.0
+2. 32 MP RM 200.0
+3. 64 MP RM 300.0
+Please select your mobile phone's camera: 3
+You choose 64 MP and the pricecamera is RM 300.0
+
+We have these screen technology!
+1. AMOLED RM 1000.0
+2. IPS RM 700.0
+Please select your mobile phone's screen: 1
+You choose AMOLED and the pricescreen is RM 1000.0
+
+We have these battery!
+1. 4300 mAh RM 100.0
+2. 5000 mAh RM 200.0
+3. 6400 mAh RM 300.0
+Please select your mobile phone's battery: 3
+You choose 6400 mAh and the pricebattery is RM 300.0
+
+Do you want to purchase earphone for RM 25? YES(Y) or NO(N)y
+Thank you! You add on earphone completely!
+
+Do you want to purchase screen protector for RM 10? YES(Y) or NO(N)h
+Please enter the correct word!
+
+Do you want to purchase screen protector for RM 10? YES(Y) or NO(N)y
+Thank you! You add on screen protector completely!
+
+Do you want to purchase powerbank for RM 50? YES(Y) or NO(N)n
+Alright thank you.
+
+Do you want to purchase phone case for RM 10? YES(Y) or NO(N)y
+Thank you! You add on phone case completely!
+
+What is the place you live and we can delivery to you.South(S) or North(N)n
+Thank you! We will delivery to you!
+The total price is : RM 4305.00
+
+We will give you 10% discount!!!
+Discount                   : RM 430.50
+Total Price after discount : RM 3874.50
+
+Please choose your payment types
+Please Enter [C] as Cash or [I] as Instalment
+i
+   ________________________
+  |      Instalment for 12 months' duration = 4% interest rate        |
+  |      Instalment for 24 months' duration = 5% interest rate        | 
+  |________________________|
+Please enter [12] for 12 months' duration, [24] for 24 months' duration
+24
+You choose 24 months' duration.
+Total instalment amount  : RM 215.25
+Total balance should pay : RM 4520.25
+Total should pay monthly : RM 188.34
+Thank you!!!
+This is your receipt
+
+--------------------------------------------------------------------------------
+                            **RECETPT***
+--------------------------------------------------------------------------------
+                       **DREAM MOBILE SHOP***
+                   **CONTACT NUMBER: 016-3672588 ***
+Consumer Detail
+Name         : Toh
+IC           : 010826
+Phone Number : 016
+
+Total Price after discount : RM 4305.00
+Total instalment amount    : RM 215.25
+Total balance should pay   : RM 4520.25
+Total should pay monthly   : RM 188.34
+--------------------------------------------------------------------------------
+                        **THANK YOU!!! PLEASE COME AGAIN***
+--------------------------------------------------------------------------------
+Menu 
+1. INTERNET USAGE CALCULATION SYSTEM
+2. MOBILE ACCESSORIES SYSTEM
+3. LAPTOP DEPRECIATION SYSTEM
+4. DETECTING RISK SYSTEM
+5. TV PACKAGE SYSTEM
+6. Exit
+Please select an Option : 6
+Thank you! See you next time!!!

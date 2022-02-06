@@ -1,0 +1,457 @@
+package project;
+import java.util.Scanner;
+public class Mobile {	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		shop();
+		
+		System.out.println("Please enter the following information");
+		System.out.print("Name: ");
+		String name = scan.nextLine();
+		System.out.print("IC: ");
+		String IC = scan.nextLine();
+		System.out.print("Phone number: ");
+		String phonenumber = scan.nextLine();
+		
+		line();
+		shop();
+		dot();
+		
+			double totalprices = 0;
+			double totalprice = 0;
+			//processor					
+			totalprices += processor(totalprice);		
+			//ram
+			totalprices +=ram(totalprice);			
+			//storage
+			totalprices +=storage(totalprice);
+			//camera
+			totalprices +=camera(totalprice);			
+			//screen technology
+			totalprices +=screen(totalprice);			
+			//Battery
+			totalprices +=battery(totalprice);			
+			//earphone
+			totalprices +=earphone(totalprice);		
+			//screen protector
+			totalprices +=screenprotector(totalprice);			
+			//powerbank
+			totalprices +=powerbank(totalprice);
+			//phonecase
+			totalprices +=phonecase(totalprice);			
+			//shippingfee
+			totalprices +=shippingfee(totalprice);
+			//total	
+			total(totalprices); 
+			//payment method
+			paymentmethod(totalprices,name,IC,phonenumber);
+						 
+	}					
+	
+	static Scanner scan = new Scanner (System.in);
+	public static void shop() {
+		System.out.println("\n                     *****WELCOME DREAM MOBILE SHOP******");
+	}
+	 public static void line(){
+	 int line=1;
+	 while(line<=80){
+	 System.out.printf("%c",45);
+	 line++; 
+	        }
+	 }
+	 public static void dot(){
+		 int dot=1;
+		 while(dot<=80){
+		 System.out.print("-");
+		 dot++; 
+		        }
+	 }
+	 public static double processor(double totalprice) {
+		totalprice = 0;
+		 System.out.println("\nWe have these processor!");
+			String processor[]= {"Snapdragon 888","Snapdragon 855","Exynos 2100","Kirin 9000 "};
+			double[]priceprocessor= {2000,800,800,1200};
+			System.out.println("1. "+processor[0]+" RM "+ priceprocessor[0]);
+			System.out.println("2. "+processor[1]+" RM "+ priceprocessor[1]);
+			System.out.println("3. "+processor[2]+"    RM "+ priceprocessor[2]);
+			System.out.println("4. "+processor[3]+"    RM "+ priceprocessor[3]);
+			System.out.print("Please select your mobile phone's processor: ");
+			int processor1 = scan.nextInt();
+			if(processor1==1) {
+				System.out.println("You choose "+ processor[0]+" and the price processor is RM "+priceprocessor[0]);
+				totalprice += priceprocessor[0];	
+			}
+			else if(processor1==2) {
+				System.out.println("You choose "+ processor[1]+" and the price processor is RM "+priceprocessor[1]);
+				totalprice += priceprocessor[1];	
+			}
+			else if(processor1==3) {
+				System.out.println("You choose "+ processor[2]+" and the price processor is RM "+priceprocessor[2]);
+				totalprice += priceprocessor[2];	
+			}
+			else if(processor1==4) {
+				System.out.println("You choose "+ processor[3]+" and the price processor is RM "+priceprocessor[3]);
+				totalprice += priceprocessor[3];	
+			}
+		 return totalprice;
+		 }
+	 public static double ram(double totalprice) {
+		 totalprice=0;
+		 System.out.println("\nWe have these Ram!");
+			String[]ram= {"4 GB","6 GB","8 GB"};
+			double[]priceram= {200,400,500};
+			System.out.println("1. "+ram[0]+" RM "+ priceram[0]);
+			System.out.println("2. "+ram[1]+" RM "+ priceram[1]);
+			System.out.println("3. "+ram[2]+" RM "+ priceram[2]);
+			System.out.print("Please select your mobile phone's ram: ");
+			int ram1 = scan.nextInt();
+			
+			if(ram1==1) {
+				System.out.println("You choose "+ ram[0]+" and the priceram is RM "+priceram[0]);
+				totalprice += priceram[0];	
+			}
+			else if(ram1==2) {
+				System.out.println("You choose "+ ram[1]+" and the priceram is RM "+priceram[1]);
+				totalprice += priceram[1];	
+			}
+			else if(ram1==3) {
+				System.out.println("You choose "+ ram[2]+" and the priceram is RM "+priceram[2]);
+				totalprice += priceram[2];	
+			}
+		 return totalprice;		 
+	 }
+	 public static double storage(double totalprice) {
+		 totalprice=0;
+		 System.out.println("\nWe have these storage!");
+			String[]storage= {"32 GB","64 GB","128 GB","256 GB"};
+			double[]pricestorage= {300,400,600,800};
+			System.out.println("1. "+storage[0]+" RM "+ pricestorage[0]);
+			System.out.println("2. "+storage[1]+" RM "+ pricestorage[1]);
+			System.out.println("3. "+storage[2]+" RM "+ pricestorage[2]);
+			System.out.println("4. "+storage[3]+" RM "+ pricestorage[3]);
+			System.out.print("Please select your mobile phone's storage: ");
+			int storage1 = scan.nextInt();
+			
+			if(storage1==1) {
+				System.out.println("You choose "+ storage[0]+" and the pricestorage is RM "+pricestorage[0]);
+				totalprice += pricestorage[0];	
+			}
+			else if(storage1==2) {
+				System.out.println("You choose "+ storage[1]+" and the pricestorage is RM "+pricestorage[1]);
+				totalprice += pricestorage[1];	
+			}
+			else if(storage1==3) {
+				System.out.println("You choose "+ storage[2]+" and the pricestorage is RM "+pricestorage[2]);
+				totalprice += pricestorage[2];
+			}
+			else if(storage1==4) {
+				System.out.println("You choose "+ storage[3]+" and the pricestorage is RM "+pricestorage[3]);
+				totalprice += pricestorage[3];	
+			}
+			
+		 return totalprice;		 
+	 }
+	 public static double camera(double totalprice) {
+		 totalprice=0;
+		 System.out.println("\nWe have these camera!");
+			String[]camera= {"16 MP","32 MP","64 MP"};
+			double[]pricecamera= {100,200,300};
+			System.out.println("1. "+camera[0]+" RM "+ pricecamera[0]);
+			System.out.println("2. "+camera[1]+" RM "+ pricecamera[1]);
+			System.out.println("3. "+camera[2]+" RM "+ pricecamera[2]);
+			System.out.print("Please select your mobile phone's camera: ");
+			int camera1 = scan.nextInt();
+			
+			if(camera1==1) {
+				System.out.println("You choose "+ camera[0]+" and the pricecamera is RM "+pricecamera[0]);
+				totalprice += pricecamera[0];	
+			}
+			else if(camera1==2) {
+				System.out.println("You choose "+ camera[1]+" and the pricecamera is RM "+pricecamera[1]);
+				totalprice += pricecamera[1];	
+			}
+			else if(camera1==3) {
+				System.out.println("You choose "+ camera[2]+" and the pricecamera is RM "+pricecamera[2]);
+				totalprice += pricecamera[2];	
+			}
+		 return totalprice;		 
+	 }
+	 public static double screen(double totalprice) {
+		 totalprice=0;
+		 System.out.println("\nWe have these screen technology!");
+			String[]screen= {"AMOLED","IPS"};
+			double[]pricescreen= {1000,700};
+			System.out.println("1. "+screen[0]+" RM "+ pricescreen[0]);
+			System.out.println("2. "+screen[1]+" RM "+ pricescreen[1]);
+			System.out.print("Please select your mobile phone's screen: ");
+			int screen1 = scan.nextInt();
+			
+			if(screen1==1) {
+				System.out.println("You choose "+ screen[0]+" and the pricescreen is RM "+pricescreen[0]);
+				totalprice += pricescreen[0];	
+			}
+			else if(screen1==2) {
+				System.out.println("You choose "+ screen[1]+" and the pricescreen is RM "+pricescreen[1]);
+				totalprice += pricescreen[1];	
+			}
+		 return totalprice;		 
+	 }
+	 public static double battery(double totalprice) {
+		 totalprice=0;
+		 System.out.println("\nWe have these battery!");
+			String[]battery= {"4300 mAh","5000 mAh","6400 mAh"};
+			double[]pricebattery= {100,200,300};
+			System.out.println("1. "+battery[0]+" RM "+ pricebattery[0]);
+			System.out.println("2. "+battery[1]+" RM "+ pricebattery[1]);
+			System.out.println("3. "+battery[2]+" RM "+ pricebattery[2]);
+			System.out.print("Please select your mobile phone's battery: ");
+			int battery1 = scan.nextInt();
+			
+			if(battery1==1) {
+				System.out.println("You choose "+ battery[0]+" and the pricebattery is RM "+pricebattery[0]);
+				totalprice += pricebattery[0];	
+			}
+			else if(battery1==2) {
+				System.out.println("You choose "+ battery[1]+" and the pricebattery is RM "+pricebattery[1]);
+				totalprice += pricebattery[1];	
+			}
+			else if(battery1==3) {
+				System.out.println("You choose "+ battery[2]+" and the pricebattery is RM "+pricebattery[2]);
+				totalprice += pricebattery[2];	
+			}
+		 return totalprice;		 
+	 }
+	 
+	 public static double earphone(double totalprice) {
+		 totalprice=0;
+		 char earphone;
+			do{
+				System.out.print("\nDo you want to purchase earphone for RM 25? YES(Y) or NO(N)");
+			
+			int priceearphone=25;			 
+			earphone = scan.next().charAt(0);
+			 if(earphone=='Y' || earphone=='y') {
+			 System.out.println("Thank you! You add on earphone completely!");
+			 totalprice += priceearphone;
+			 break;
+			}
+			 else if(earphone=='N'|| earphone=='n') {
+				 System.out.println("Alright thank you.");
+				 break;
+			 }
+			 else if (earphone !='Y'|| earphone=='y'||earphone=='N'|| earphone=='n'){
+				 System.out.println("Please enter the correct word!");				
+			 }}while(earphone !='Y'|| earphone=='y'||earphone=='N'|| earphone=='n');
+		 return totalprice;		 
+	 }
+	 public static double screenprotector(double totalprice) {
+		 totalprice=0;
+		 char screenprotector;
+			do{
+				System.out.print("\nDo you want to purchase screen protector for RM 10? YES(Y) or NO(N)");
+		
+			int pricescreenprotector=10;			 
+			screenprotector = scan.next().charAt(0);
+			 if(screenprotector=='Y' || screenprotector=='y') {
+			 System.out.println("Thank you! You add on screen protector completely!");
+			 totalprice += pricescreenprotector;
+			 break;
+			}
+			 else if(screenprotector=='N'|| screenprotector=='n') {
+				 System.out.println("Alright thank you.");
+				 break;
+			 }
+			 else if (screenprotector !='Y'|| screenprotector=='y'||screenprotector=='N'|| screenprotector=='n'){
+				 System.out.println("Please enter the correct word!");
+			 }}while(screenprotector !='Y'|| screenprotector=='y'||screenprotector=='N'|| screenprotector=='n');
+			
+		 return totalprice;		 
+	 }
+	 public static double powerbank(double totalprice) {
+		 totalprice=0;
+		 char powerbank;
+			do{
+			System.out.print("\nDo you want to purchase powerbank for RM 50? YES(Y) or NO(N)");
+	
+			int pricepowerbank=50;			 
+			powerbank = scan.next().charAt(0);
+		 	if(powerbank=='Y' || powerbank=='y') {
+		 	 System.out.println("Thank you! You add on power bank completely!");
+		 	 totalprice += pricepowerbank;
+		 	 break;
+		 	}
+		 	else if(powerbank=='N'|| powerbank=='n') {
+			 System.out.println("Alright thank you.");
+			 break;
+		 	}
+		 	else if(powerbank !='Y'|| powerbank=='y'||powerbank=='N'|| powerbank=='n'){
+			 System.out.println("Please enter the correct word!");
+		 	}}while(powerbank !='Y'|| powerbank=='y'||powerbank=='N'|| powerbank=='n');
+					
+		 return totalprice;		 
+	 }
+	 public static double phonecase(double totalprice) {
+		 totalprice=0;
+		 char phonecase;
+			do{
+			System.out.print("\nDo you want to purchase phone case for RM 10? YES(Y) or NO(N)");
+	
+			int pricephonecase=10;			 
+			phonecase = scan.next().charAt(0);
+		 	if(phonecase=='Y' || phonecase=='y') {
+		 		System.out.println("Thank you! You add on phone case completely!");
+		 		totalprice += pricephonecase;
+		 		break;
+		 	}
+		 	else if(phonecase=='N'|| phonecase=='n') {
+			 System.out.println("Alright thank you.");
+			 break;
+		 	}
+		 	else if(phonecase !='Y'|| phonecase=='y'||phonecase=='N'|| phonecase=='n'){
+			 System.out.println("Please enter the correct word!");
+		 	}}while(phonecase !='Y'|| phonecase=='y'||phonecase=='N'|| phonecase=='n');
+			return totalprice;
+	 }
+	 public static double shippingfee(double totalprice) {
+		 totalprice=0;
+		 double shippingfee;
+		 double shippingfees[] = {50,60};
+			do{
+				System.out.print("\nWhat is the place you live and we can delivery to you.South(S) or North(N)");							
+				shippingfee = scan.next().charAt(0);
+			 	if(shippingfee=='S' || shippingfee=='s') {
+			 		System.out.println("Thank you! We will delivery to you!");
+			 		totalprice += shippingfees[0];
+			 		break;
+			 	}
+			 	else if(shippingfee=='N'|| shippingfee=='n') {
+			 		System.out.println("Thank you! We will delivery to you!");
+			 		totalprice += shippingfees[1];
+			 		break;
+			 	}
+			 	else if(shippingfee !='S'|| shippingfee=='s'||shippingfee=='N'|| shippingfee=='n'){
+				 System.out.println("Please enter the correct word!");
+			 	}}while(shippingfee !='S'|| shippingfee!='s'||shippingfee!='N'|| shippingfee!='n');
+							
+			return totalprice;
+	 }
+	 public static double total(double totalprice) {
+		 double totalprices = totalprice;
+		 System.out.printf("The total price is : RM %.2f%n" , totalprices);
+			double discount=totalprices * 0.10;
+			System.out.println("\nWe will give you 10% discount!!!");
+			System.out.printf("Discount                   : RM %.2f%n" , discount);
+			double price = totalprices - discount;
+			System.out.printf("Total Price after discount : RM %.2f%n" , price);
+		return totalprice;		 
+	 }
+	 public static double paymentmethod(double totalprices,String name,String IC,String phonenumber) {
+		 double price = totalprices;	
+		 int month;
+			String PT ;
+			char payment;
+			double tendered;
+			System.out.println("\nPlease choose your payment types");
+			System.out.println("Please Enter [C] as Cash or [I] as Instalment");
+			 PT = scan.next();
+			payment = PT.charAt(0);
+				if (payment =='C'||payment =='c'){
+	    		System.out.printf("\nThe total amount you should pay after discount is : RM %.2f%n", price);		    	
+				do {
+	    		System.out.print("Please enter your amount tendered : RM ");
+	    		tendered = scan.nextDouble();
+	    		
+	    		if(tendered<price) {
+	    			System.out.println("Please enter an enough amount!!!");
+	    		}
+	    		}while(tendered<price);
+				
+				double change = tendered-price ;
+				System.out.println("Thank you!!!");
+				System.out.println("This is your receipt");
+				 System.out.println();
+					//Receipt
+					dot();
+					System.out.println("\n                            *****RECETPT******");
+					dot();
+					System.out.println("\n                       *****DREAM MOBILE SHOP******");
+					System.out.println("                   *****CONTACT NUMBER: 016-3672588 ******");
+					
+					System.out.println("Consumer Detail");
+					System.out.println("Name         : " + name);
+					System.out.println("IC           : " + IC);
+					System.out.println("Phone Number : " + phonenumber);		
+						
+					System.out.printf("\nTotal Price after discount : RM %.2f" , price);				
+					System.out.printf("\nAmount Tendered            : RM %.2f%n" , tendered);
+					dot();
+					System.out.printf("\nChange                     : RM %.2f" , change);
+																				
+					System.out.println();
+					dot();
+					System.out.println("\n                        *****THANK YOU!!! PLEASE COME AGAIN******");
+					dot();
+					System.out.println();
+	    			}
+	    			else if (payment =='I'||payment=='i'){
+	    			double instalment=0;
+	    			double instalmentpay=0;
+	    			double instalmentpaymonth=0;
+	    			System.out.println("   ____________________________________________________________________");
+					System.out.println("  |      Instalment for 12 months' duration = 4% interest rate        |");
+					System.out.println("  |      Instalment for 24 months' duration = 5% interest rate        | ");
+					System.out.println("  |____________________________________________________________________|");
+					System.out.println("Please enter [12] for 12 months' duration, [24] for 24 months' duration");
+					month = scan.nextInt();
+					if (month == 12) {		
+						System.out.println("You choose 12 months' duration.");
+						instalment=price*0.04;
+						instalmentpay=price+instalment;
+						instalmentpaymonth=instalmentpay/12;
+						System.out.printf("Total instalment amount  : RM %.2f%n" , instalment);							
+						System.out.printf("Total balance should pay : RM %.2f%n" , instalmentpay);							
+						System.out.printf("Total should pay monthly : RM %.2f%n" , instalmentpaymonth);			
+					}
+					if (month == 24) {				
+						System.out.println("You choose 24 months' duration.");
+						instalment=price*0.05;
+						instalmentpay=price+instalment;
+						instalmentpaymonth=instalmentpay/24;
+						System.out.printf("Total instalment amount  : RM %.2f%n" , instalment);							
+						System.out.printf("Total balance should pay : RM %.2f%n" , instalmentpay);							
+						System.out.printf("Total should pay monthly : RM %.2f%n" , instalmentpaymonth);	
+					}
+					System.out.println("Thank you!!!");
+					System.out.println("This is your receipt");
+				
+					 System.out.println();
+						//Receipt
+						dot();
+						System.out.println("\n                            *****RECETPT******");
+						dot();
+						System.out.println("\n                       *****DREAM MOBILE SHOP******");
+						System.out.println("                   *****CONTACT NUMBER: 016-3672588 ******");
+						
+						System.out.println("Consumer Detail");
+						System.out.println("Name         : " + name);
+						System.out.println("IC           : " + IC);
+						System.out.println("Phone Number : " + phonenumber);
+												
+						System.out.printf("\nTotal Price after discount : RM %.2f" , price);				
+						System.out.printf("\nTotal instalment amount    : RM %.2f" , instalment);
+						System.out.println();
+						System.out.printf("Total balance should pay   : RM %.2f" , instalmentpay);
+						System.out.println();
+						System.out.printf("Total should pay monthly   : RM %.2f" , instalmentpaymonth);
+																					
+						System.out.println();
+						dot();
+						System.out.println("\n                        *****THANK YOU!!! PLEASE COME AGAIN******");
+						dot();	
+						System.out.println();
+		
+		 
+	 }return totalprices;
+}
+}

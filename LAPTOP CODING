@@ -390,3 +390,145 @@ public class Laptop {
 	}
 
 }
+
+Output :
+
+****************==WELCOME TO THE LAPTOP DEPRECIATION SYSTEM!!==********************
+
+————————————————————————————————————————————————————————————————————————————
+------------------------------------ASUS------------------------------------
+————————————————————————————————————————————————————————————————————————————
+Enter the initial purchase price of laptop(RM): 
+5000
+Enter the number of years: 
+5
+Enter depreciation percentage(%): 
+50
+Enter the amount of laptop: 
+5
+
+Before depreciation: RM25000.00
+After depreciation : RM781.25
+————————————————————————————————————————————————————————————————————————————
+------------------------------------APPLE------------------------------------
+————————————————————————————————————————————————————————————————————————————
+Enter the initial purchase price of laptop(RM): 
+2500
+Enter the number of years: 
+2
+Enter depreciation percentage(%): 
+10
+Enter the amount of laptop: 
+20
+
+Before depreciation: RM50000.00
+After depreciation : RM40500.00
+————————————————————————————————————————————————————————————————————————————
+------------------------------------ACER------------------------------------
+————————————————————————————————————————————————————————————————————————————
+Enter the initial purchase price of laptop(RM): 
+5500
+Enter the number of years: 
+3
+Enter depreciation percentage(%): 
+10
+Enter the amount of laptop: 
+20
+
+Before depreciation: RM110000.00
+After depreciation : RM80190.00
+————————————————————————————————————————————————————————————————————————————
+------------------------------------HP------------------------------------
+————————————————————————————————————————————————————————————————————————————
+Enter the initial purchase price of laptop(RM): 
+3000
+Enter the number of years: 
+5
+Enter depreciation percentage(%): 
+20
+Enter the amount of laptop: 
+50
+
+Before depreciation: RM150000.00
+After depreciation : RM49152.00
+————————————————————————————————————————————————————————————————————————————
+------------------------------------DELL------------------------------------
+————————————————————————————————————————————————————————————————————————————
+Enter the initial purchase price of laptop(RM): 
+1500
+Enter the number of years: 
+2
+Enter depreciation percentage(%): 
+10
+Enter the amount of laptop: 
+20
+
+Before depreciation: RM30000.00
+After depreciation : RM24300.00
+
+————————————————————————————————————————————————————————————————————————————
+---------------------------TOTAL SALVAGE VALUE------------------------------
+————————————————————————————————————————————————————————————————————————————
+ASUS : 		RM781.25
+APPLE: 		RM40500.00
+ACER : 		RM80190.00
+HP   : 		RM49152.00
+DELL : 		RM24300.00
+          	--------------
+Total  : 	RM194923.25
+          	--------------
+
+————————————————————————————————————————————————————————————————————————————
+--------------------------NEW LAPTOP INFORMATION----------------------------
+————————————————————————————————————————————————————————————————————————————
+
+THE NUMBER OF NEW LAPTOP SOLD: 
+100
+THE PRICE OF A NEW LAPTOP: 
+5000
+
+TOTAL PRICE OF ALL LAPTOP SOLD: RM500000.00
+
+————————————————————————————————————————————————————————————————————————————
+---------------------------------INSTALMENT---------------------------------
+————————————————————————————————————————————————————————————————————————————
+
+----------------------------RULES FOR INSTALMENT----------------------------
+1. MAXIMUM LIMIT OF INSTALMENT PERIOD IS 10 YEARS
+2. CUSTOMER MAY PAY 5% INTEREST EACH YEAR
+3. CUSTOMER MUST PAY 20% DEPOSIT FOR INSTALMENT
+4. 1% PENALTY WILL BE CHARGED IF EXCEED THE INSTALMENT PERIOD
+
+DEPOSIT RECEIVED  : 	RM100000.00
+ACCOUNT RECEIVABLE: 	RM205076.75
+INSTALMENT PERIOD: 
+10
+Installment 1  : 	RM20507.68	Balance : 	RM184569.08 
+Installment 2  : 	RM20507.68	Balance : 	RM164061.40 
+Installment 3  : 	RM20507.68	Balance : 	RM143553.73 
+Installment 4  : 	RM20507.68	Balance : 	RM123046.05 
+Installment 5  : 	RM20507.68	Balance : 	RM102538.38 
+Installment 6  : 	RM20507.68	Balance : 	RM82030.70 
+Installment 7  : 	RM20507.68	Balance : 	RM61523.03 
+Installment 8  : 	RM20507.68	Balance : 	RM41015.35 
+Installment 9  : 	RM20507.68	Balance : 	RM20507.68 
+Installment 10  : 	RM20507.68	Balance : 	RM0.00 
+Interest per year: 	RM1025.38
+
+----------------------------RULES FOR CASHBACK------------------------------
+1. CUSTOMERS PAY BACK IN 2 YEARS TIME WILL GET 20% CASHBACK
+2. CUSTOMERS PAY BACK IN 3 YEARS TIME WILL GET 15% CASHBACK
+3. CUSTOMERS PAY BACK IN 4 YEARS TIME WILL GET 10% CASHBACK
+4. CUSTOMERS PAY BACK IN 5 YEARS TIME WILL GET 0% CASHBACK
+
+---------------------------------CALCULATION----------------------------------
+ENTER YEARS TAKEN TO PAYBACK: 
+4
+
+HE FOLLOWED THE 3RD RULE OF CASHBACK AND PAY BACK IN TIME
+CASHBACK IS GIVEN
+
+CASHBACK: 	5%
+CASH OUT : 	RM250000.00
+
+******************==THANK YOU FOR USING THIS SYSTEM!!==*********************

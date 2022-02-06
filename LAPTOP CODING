@@ -1,0 +1,392 @@
+package project;
+import java.util.Scanner;
+
+public class Laptop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] laptops = {"ASUS","APPLE","ACER","HP","DELL"};
+		double salvage_value =0;
+		double salvage_values = 0;
+		double salvage_valueAsus = 0;
+		double salvage_valueApple = 0;
+		double salvage_valueAcer = 0;
+		double salvage_valueHp = 0;
+		double salvage_valueDell = 0;
+		double totalprice=0;
+		
+		Welcome();
+		
+		Asus(laptops);
+		salvage_valueAsus += DepreciationAsus(salvage_value);
+		
+		Apple(laptops);
+		salvage_valueApple +=DepreciationApple(salvage_value);
+		
+		Acer(laptops);
+		salvage_valueAcer += DepreciationAcer(salvage_value);
+		
+		Hp(laptops);
+		salvage_valueHp += DepreciationHp(salvage_value);			
+		
+		Dell(laptops);
+		salvage_valueDell +=DepreciationDell(salvage_value);
+		
+		Salvagevalue();
+		salvage_values = salvage_valueAsus+salvage_valueApple+salvage_valueAcer+salvage_valueAcer+salvage_valueDell;
+		sv(salvage_valueAsus,salvage_valueApple,salvage_valueAcer,salvage_valueHp,salvage_valueDell,salvage_values);
+		
+		NewLaptop();
+		totalprice = newLaptop(totalprice);
+		System.out.println();
+		
+		Instalrules();
+		is(totalprice,salvage_values);
+		
+		CashRules();
+		cashBack(totalprice);
+		
+		ThankYou();
+}
+	public static String[]Asus(String[]laptops) {
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------------------"+laptops[0]+"------------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		return laptops;
+	}
+	public static String[]Apple(String[]laptops) {
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------------------"+laptops[1]+"------------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		return laptops;
+	}
+	public static String[]Acer(String[]laptops) {
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------------------"+laptops[2]+"------------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		return laptops;
+	}
+	public static String[]Hp(String[]laptops) {
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------------------"+laptops[3]+"------------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		return laptops;
+	}
+	public static String[]Dell(String[]laptops) {
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		System.out.println("------------------------------------"+laptops[4]+"------------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+		return laptops;
+	}
+	static void Welcome() {
+		System.out.println("****************==WELCOME TO THE LAPTOP DEPRECIATION SYSTEM!!==********************");
+		System.out.println();
+	}
+	static void Salvagevalue() {
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("---------------------------TOTAL SALVAGE VALUE------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+	}
+	static void NewLaptop() {
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("--------------------------NEW LAPTOP INFORMATION----------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————");
+	}
+	static void Instalrules() {
+		System.out.println("\n————————————————————————————————————————————————————————————————————————————");
+		System.out.println("---------------------------------INSTALMENT---------------------------------");
+		System.out.println("————————————————————————————————————————————————————————————————————————————\n");
+		System.out.println("----------------------------RULES FOR INSTALMENT----------------------------");
+		System.out.println("1. MAXIMUM LIMIT OF INSTALMENT PERIOD IS 10 YEARS");
+		System.out.println("2. CUSTOMER MAY PAY 5% INTEREST EACH YEAR");
+		System.out.println("3. CUSTOMER MUST PAY 20% DEPOSIT FOR INSTALMENT");
+		System.out.println("4. 1% PENALTY WILL BE CHARGED IF EXCEED THE INSTALMENT PERIOD");
+	}
+	static void CashRules() {
+		System.out.println("\n----------------------------RULES FOR CASHBACK------------------------------");
+		System.out.println("1. CUSTOMERS PAY BACK IN 2 YEARS TIME WILL GET 20% CASHBACK");
+		System.out.println("2. CUSTOMERS PAY BACK IN 3 YEARS TIME WILL GET 15% CASHBACK");
+		System.out.println("3. CUSTOMERS PAY BACK IN 4 YEARS TIME WILL GET 10% CASHBACK");
+		System.out.println("4. CUSTOMERS PAY BACK IN 5 YEARS TIME WILL GET 0% CASHBACK");
+		
+		System.out.println("\n---------------------------------CALCULATION----------------------------------");
+	}
+	static void ThankYou() {
+		System.out.println("\n******************==THANK YOU FOR USING THIS SYSTEM!!==*********************");
+	}
+	public static double DepreciationAsus(double salvage_value) {
+		Scanner scan = new Scanner (System.in);
+		int amount;
+		double purchase_price;
+		double total_price;
+		double year;
+		double depreciation;
+		double value;
+		
+		System.out.println("Enter the initial purchase price of laptop(RM): ");
+		purchase_price = scan.nextDouble();
+		
+		System.out.println("Enter the number of years: ");
+		year = scan.nextDouble();
+		
+		System.out.println("Enter depreciation percentage(%): ");
+		depreciation = scan.nextDouble();
+		
+		System.out.println("Enter the amount of laptop: ");
+		amount = scan.nextInt();
+		
+		value = purchase_price;
+		
+		for(int i=1; i<=year; i++) {
+			value=((100-depreciation)*value)/100;
+		}
+		total_price = purchase_price * amount;
+		salvage_value = value * amount;
+		
+		System.out.printf("\nBefore depreciation: RM%.2f\n", total_price);
+		System.out.printf("After depreciation : RM%.2f\n",salvage_value);
+	
+		return salvage_value;
+	
+	}
+	public static double DepreciationApple(double salvage_value) {
+		Scanner scan = new Scanner (System.in);
+		int amount;
+		double purchase_price;
+		double total_price;
+		double year;
+		double depreciation;
+		double value;
+		
+		System.out.println("Enter the initial purchase price of laptop(RM): ");
+		purchase_price = scan.nextDouble();
+		
+		System.out.println("Enter the number of years: ");
+		year = scan.nextDouble();
+		
+		System.out.println("Enter depreciation percentage(%): ");
+		depreciation = scan.nextDouble();
+		
+		System.out.println("Enter the amount of laptop: ");
+		amount = scan.nextInt();
+		
+		value = purchase_price;
+		
+		for(int i=1; i<=year; i++) {
+			value=((100-depreciation)*value)/100;
+		}
+		total_price = purchase_price * amount;
+		salvage_value = value * amount;
+		
+		System.out.printf("\nBefore depreciation: RM%.2f\n", total_price);
+		System.out.printf("After depreciation : RM%.2f\n",salvage_value);
+		return salvage_value;
+	}
+	public static double DepreciationAcer(double salvage_value) {
+		Scanner scan = new Scanner (System.in);
+		int amount;
+		double purchase_price;
+		double total_price;
+		double year;
+		double depreciation;
+		double value;
+		
+		System.out.println("Enter the initial purchase price of laptop(RM): ");
+		purchase_price = scan.nextDouble();
+		
+		System.out.println("Enter the number of years: ");
+		year = scan.nextDouble();
+		
+		System.out.println("Enter depreciation percentage(%): ");
+		depreciation = scan.nextDouble();
+		
+		System.out.println("Enter the amount of laptop: ");
+		amount = scan.nextInt();
+		
+		value = purchase_price;
+		
+		for(int i=1; i<=year; i++) {
+			value=((100-depreciation)*value)/100;
+		}
+		total_price = purchase_price * amount;
+		salvage_value = value * amount;
+		
+		System.out.printf("\nBefore depreciation: RM%.2f\n", total_price);
+		System.out.printf("After depreciation : RM%.2f\n",salvage_value);
+		return salvage_value;
+	}
+	public static double DepreciationHp(double salvage_value) {
+		Scanner scan = new Scanner (System.in);
+		int amount;
+		double purchase_price;
+		double total_price;
+		double year;
+		double depreciation;
+		double value;
+		
+		System.out.println("Enter the initial purchase price of laptop(RM): ");
+		purchase_price = scan.nextDouble();
+		
+		System.out.println("Enter the number of years: ");
+		year = scan.nextDouble();
+		
+		System.out.println("Enter depreciation percentage(%): ");
+		depreciation = scan.nextDouble();
+		
+		System.out.println("Enter the amount of laptop: ");
+		amount = scan.nextInt();
+		
+		value = purchase_price;
+		
+		for(int i=1; i<=year; i++) {
+			value=((100-depreciation)*value)/100;
+		}
+		total_price = purchase_price * amount;
+		salvage_value = value * amount;
+		
+		System.out.printf("\nBefore depreciation: RM%.2f\n", total_price);
+		System.out.printf("After depreciation : RM%.2f\n",salvage_value);
+		return salvage_value;
+	}
+	public static double DepreciationDell(double salvage_value) {
+		Scanner scan = new Scanner (System.in);
+		int amount;
+		double purchase_price;
+		double total_price;
+		double year;
+		double depreciation;
+		double value;
+		
+		System.out.println("Enter the initial purchase price of laptop(RM): ");
+		purchase_price = scan.nextDouble();
+		
+		System.out.println("Enter the number of years: ");
+		year = scan.nextDouble();
+		
+		System.out.println("Enter depreciation percentage(%): ");
+		depreciation = scan.nextDouble();
+		
+		System.out.println("Enter the amount of laptop: ");
+		amount = scan.nextInt();
+		
+		value = purchase_price;
+		
+		for(int i=1; i<=year; i++) {
+			value=((100-depreciation)*value)/100;
+		}
+		total_price = purchase_price * amount;
+		salvage_value = value * amount;
+		
+		System.out.printf("\nBefore depreciation: RM%.2f\n", total_price);
+		System.out.printf("After depreciation : RM%.2f\n",salvage_value);
+		return salvage_value;
+	}
+	public static double sv(double salvage_value0,double salvage_value1,double salvage_value2,double salvage_value3,double salvage_value4,double t_salvage_value) {
+		String [] laptops = {"ASUS","APPLE","ACER","HP","DELL"};
+		System.out.printf(laptops[0]+ " : \t\tRM%.2f\n",salvage_value0);
+		System.out.printf(laptops[1]+ ": \t\tRM%.2f\n",salvage_value1);
+		System.out.printf(laptops[2]+ " : \t\tRM%.2f\n",salvage_value2);
+		System.out.printf(laptops[3]+ "   : \t\tRM%.2f\n",salvage_value3);
+		System.out.printf(laptops[4]+ " : \t\tRM%.2f\n",salvage_value4);
+	
+	
+		System.out.println("          \t--------------");
+		System.out.printf("Total  : \tRM%.2f\n", t_salvage_value);
+		System.out.println("          \t--------------");
+		return t_salvage_value;
+	
+	}
+	public static double newLaptop(double totalprice) {
+		Scanner scan = new Scanner(System.in);
+		int newlaptop;
+		double pricelaptop;
+		
+		System.out.println("\nTHE NUMBER OF NEW LAPTOP SOLD: ");
+		newlaptop = scan.nextInt();
+		
+		System.out.println("THE PRICE OF A NEW LAPTOP: ");
+		pricelaptop = scan.nextDouble();
+		
+		totalprice = newlaptop * pricelaptop;
+		System.out.printf("\nTOTAL PRICE OF ALL LAPTOP SOLD: RM%.2f", totalprice);
+		return totalprice;
+	}
+	public static double is(double totalprice,double salvage_values) {
+		Scanner scan = new Scanner(System.in);
+		double deposit;
+		double receivable;
+		int instalperiod;
+		double instalment;
+		
+		deposit = 0.2 * totalprice;
+		System.out.printf("\nDEPOSIT RECEIVED  : \tRM%.2f\n",deposit);
+		
+		receivable = totalprice - deposit - salvage_values;
+		System.out.printf("ACCOUNT RECEIVABLE: \tRM%.2f\n" , receivable);
+		
+		System.out.println("INSTALMENT PERIOD: ");
+		instalperiod = scan.nextInt();
+		
+		instalment = receivable / instalperiod;
+		double balance = receivable;
+
+		for(int i = 1; i <= instalperiod; i++) {
+			balance = balance - instalment;
+		    
+			System.out.println("Installment " + i + "  " + String.format(": \tRM%.2f",instalment) + "\tBalance " + String.format(": \tRM%.2f ", balance));
+		}
+		
+		double interest = 0.05 * instalment;
+		System.out.printf("Interest per year: \tRM%.2f\n",interest);
+		return interest;
+	}
+	public static double cashBack(double totalprice) {
+		Scanner scan = new Scanner(System.in);
+		int duration;
+		int cashback;
+		double penalty;
+		double money = 0;
+		
+		System.out.println("ENTER YEARS TAKEN TO PAYBACK: ");
+		duration = scan.nextInt();
+		
+		if(duration == 5) {
+			cashback = 0;
+			System.out.println("\nHE FOLLOWED THE MINIMUM REQUIREMENT RULES OF CASHBACK AND PAY BACK IN TIME");
+			System.out.println("NO CASHBACK IS GIVEN");
+			System.out.println("\nCASHBACK: \t" + cashback + "%");
+		}	
+		else if(duration == 4) {
+			cashback = 5;
+			money = 0.5 * totalprice;
+			System.out.println("\nHE FOLLOWED THE 3RD RULE OF CASHBACK AND PAY BACK IN TIME");
+			System.out.println("CASHBACK IS GIVEN");
+			System.out.println("\nCASHBACK: \t" + cashback + "%");
+			System.out.printf("CASH OUT : \tRM%.2f\n",money);
+		}
+		else if(duration == 3) {
+			cashback = 10;
+			money = 0.10 * totalprice;
+			System.out.println("\nHE FOLLOWED THE 2ND RULE OF CASHBACK AND PAY BACK IN TIME");
+			System.out.println("CASHBACK IS GIVEN");
+			System.out.println("\nCASHBACK: \t" + cashback + "%");
+			System.out.printf("CASH OUT : \tRM%.2f\n",money);
+		}
+		else if(duration <= 2) {
+			cashback = 15;
+			money = 0.15 * totalprice;
+			System.out.println("\nHE FOLLOWED THE 1ST RULE OF CASHBACK AND PAY BACK IN TIME");
+			System.out.println("CASHBACK IS GIVEN");
+			System.out.println("\nCASHBACK: \t" + cashback + "%");
+			System.out.printf("CASH OUT : \tRM%.2f\n",money);
+		}
+		else {
+			penalty = 0.01 * totalprice;
+			System.out.println("\nHE VIOLATED THE 6TH RULE OF INSTALMENT");
+			System.out.println("1% EXTRA CASH WILL BE CHARGED");
+			System.out.printf("\nPENALTY: \tRM%.2f\n",penalty);
+		}
+		return money;
+	}
+
+}

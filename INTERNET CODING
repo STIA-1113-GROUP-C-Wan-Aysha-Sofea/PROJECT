@@ -1,0 +1,292 @@
+package project;
+import java.util.Scanner;
+
+public class Internet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanMe=new Scanner(System.in);
+		double z1=0;
+		double zp=0;
+		double z2=0;
+		double zv=0;
+		double z3=0;
+		double zh=0;
+		double z4=0;
+		double zs=0;
+		double z5=0;
+		double ze=0;
+		double z6=0;
+		double zw=0;
+		double z7=0;
+		double zo=0;
+		double z8=0;
+		double zsc=0;
+		char cont;
+		system();
+		do {
+		mainMenu();
+		extraInformation();
+	
+		zp+=photo(z1);
+		zv+=video(z2);
+		zh+= hdv(z3);
+		zs+= song(z4);
+		ze+= email(z5);
+		zw+= web(z6);
+		zo+= onlinegaming(z7);
+		zsc+= social(z8);
+		total(zp,zv,zh,zs,ze,zw,zo,zsc);
+		 System.out.println("Try Again? [Y/N] ");
+	        
+	        cont = scanMe.next().charAt(0);
+	        cont=Character.toUpperCase(cont);
+	        
+	 
+			if(cont == 'N') {
+			System.out.println("Thankyou!");
+			}}while(cont =='Y');
+		
+	}
+	static Scanner scanMe = new Scanner (System.in);
+	
+	public static void system() {
+		System.out.println("WELCOME TO INTERNET USAGE CALCULATION SYSTEM");
+	}
+	public static void mainMenu() {
+		System.out.println("*************");
+		System.out.println("* MAIN MENU *");
+		System.out.println("*************");
+		
+		System.out.println("Check out your daily data usage here!");
+		System.out.println("");
+        
+        System.out.println("enter data in mega bytes : "); 
+        double d1 = scanMe.nextDouble();
+        System.out.println("enter time in minutes : "); 
+        double t1 = scanMe.nextDouble();
+        System.out.println("enter time in hours : "); 
+        double t2 = scanMe.nextDouble();
+        System.out.println("enter time in months : "); 
+        double t3 = scanMe.nextDouble();
+        double s1 = (d1)/(t1);
+        System.out.print("Your data usage per minutes is " );
+        System.out.printf("%.2f" , s1);
+        System.out.println();
+        
+        double s2 = (d1)/(t2);
+        System.out.print("Your data usage per hours is " );
+        System.out.printf("%.2f" , s2);
+        
+        System.out.println();
+        
+        double s3 = (d1)/(t3);
+        System.out.print("Your data usage per months is " );
+        System.out.printf("%.2f" , s3);
+        
+        System.out.println();
+        
+        double f1 = s1 + s2 + s3;
+        System.out.print("Your total data usage is ");
+        System.out.printf("%.2f" , f1);
+        
+        System.out.println();
+        
+        double a1 = (s1 + s2 + s3) / 3;
+        System.out.print("Your average amount of data usage everyday is " );
+        System.out.printf("%.2f" , a1);
+	}
+	public static void extraInformation() {
+		 System.out.println();
+	        System.out.println();
+	        System.out.println("***************************");
+	        System.out.println("Here are some extra information!");
+	        System.out.println("You can check how much data have been used for various kind of activities.");
+	        System.out.println("Try to check it out! ");
+	        System.out.println("***************************");
+	       
+	}
+	public static double photo(double z1) {
+		 char photo;
+	        System.out.print("\nDo you want to know the amount of data usage for uploading and downloading photo? (Y/N)");
+	        photo =scanMe.next().charAt(0);
+	        photo = Character.toUpperCase(photo);
+	        
+	        if(photo == 'Y') {
+	        System.out.println("Enter the amount of photo : ");
+	        double i1 = scanMe.nextDouble();
+	         z1 = 5 * i1;
+	        System.out.print("Your data usage to upload and dowload photo is ");
+	        System.out.printf("%.2f" , z1);
+	        }
+	        else if (photo == 'N'){
+	        	System.out.println("Skip");
+	        }
+			return z1;
+	}
+	public static double video(double z2) {
+		System.out.println();
+       
+        char video;
+        System.out.print("Do you want to know the amount of data usage for streaming videos? (Y/N)");
+        video =scanMe.next().charAt(0);
+        video = Character.toUpperCase(video);
+        
+        if(video == 'Y') {
+        System.out.println("Enter the amount of  hour for standard definition video : ");
+        double i2 = scanMe.nextDouble();
+         z2 = 750 * i2;
+        System.out.print("your data usage to stream standard definition video is ");
+        System.out.printf("%.2f" , z2);
+        }
+        else if (video == 'N'){
+        	System.out.println("Skip");}
+		return z2;
+		
+	}
+	public static double hdv(double z3) {
+		System.out.println();
+        System.out.println();
+        
+        System.out.println("Enter the amount of hour for high definition video : ");
+        double i3 = scanMe.nextDouble();
+        z3 = 2000 * i3;
+        System.out.print("Your data usage to stream high definition video is ");
+        System.out.printf("%.2f" , z3);
+        
+        return z3;
+	}
+	public static double song(double z4) {
+		System.out.println();
+        System.out.println();
+        
+        char song;
+        System.out.print("Do you want to know the amount of data usage for listening to songs? (Y/N)");
+        song =scanMe.next().charAt(0);
+        song = Character.toUpperCase(song);
+        
+        if(song == 'Y') {
+        System.out.println("Enter the total amount of every 4 minutes for songs : ");
+        double i4 = scanMe.nextDouble();
+         z4 = 6.5 * i4;
+        System.out.print("Your data usage to listen to songs is ");
+        System.out.printf("%.2f" , z4);
+        }
+        else if (song == 'N'){
+        	System.out.println("Skip");
+        	}
+		return z4;
+	}
+	public static double email(double z5) {
+		System.out.println();
+        System.out.println();
+        
+        char email;
+        System.out.print("Do you want to know the amount of data usage for sending emails? (Y/N)");
+        email =scanMe.next().charAt(0);
+        email = Character.toUpperCase(email);
+        
+        if(email == 'Y') {
+        System.out.println("Enter the amount of email : ");
+        double i5 = scanMe.nextDouble();
+         z5 = 0.02 * i5;
+        System.out.print("Your data usage to send emails is ");
+        System.out.printf("%.2f" , z5);
+        }
+        else if (email == 'N'){
+        	System.out.println("Skip");
+        	}
+		return z5;
+	}
+	public static double web(double z6) {
+		 System.out.println();
+	        System.out.println();
+	        
+	        char web;
+	        System.out.print("Do you want to know the amount of data usage for web surfing? (Y/N)");
+	        web = scanMe.next().charAt(0);
+	        web = Character.toUpperCase(web);
+	        
+	        if(web == 'Y') {
+	        System.out.println("Enter the amount of hours for web surfing : ");
+	        double i6 = scanMe.nextDouble();
+	        z6 = 18 * i6;
+	        System.out.print("Your data usage for websurfing is ");
+	        System.out.printf("%.2f" , z6);
+	        }
+	        else if (web == 'N'){
+	        	System.out.println("Skip");
+	        	}
+			return z6;
+	}
+	public static double onlinegaming(double z7) {
+		System.out.println();
+        System.out.println();
+        
+        char game;
+        System.out.print("Do you want to know the amount of data usage for online gaming? (Y/N)");
+        game =scanMe.next().charAt(0);
+        game = Character.toUpperCase(game);
+        
+        if(game == 'Y') {
+        System.out.println("Enter the amount of hours for online gaming : ");
+        double i7 = scanMe.nextDouble();
+         z7 = 20 * i7;
+        System.out.print("Your data usage for online gaming is ");
+        System.out.printf("%.2f" , z7);
+        }
+        else if (game == 'N'){
+        	System.out.println("Skip");
+        	}
+		return z7;
+	}
+	public static double social(double z8) {
+		System.out.println();
+        System.out.println();
+        
+        char social;
+        System.out.print("Do you want to know the amount of data usage for social networking? (Y/N)");
+        social =scanMe.next().charAt(0);
+        social = Character.toUpperCase(social);
+        
+        if(social == 'Y') {
+        System.out.println("Enter the amount of hours for social networking : ");
+        double i8 = scanMe.nextDouble();
+         z8 = 51 * i8;
+        System.out.print("Your data usage for social networking is ");
+        System.out.printf("%.2f" , z8);
+        }
+        else if (social == 'N'){
+        	System.out.println("Skip");
+        	}
+		return z8;
+	}
+	public static double total(double zp,double zv,double zh,double zs,double ze,double zw,double zo,double zsc) {
+		double total=0;
+		System.out.println();
+        System.out.println("Here are the list of data usage for the activities above.");
+        String[]Array = {"photo", "video","high definition video", "song", "email", "web surfing", "online gaming", "social networking"};
+        
+        System.out.print(Array[0]);
+		System.out.printf(": %.2f\n" , zp);
+		System.out.print(Array[1]);
+		System.out.printf(": %.2f\n" , zv);
+		System.out.print(Array[2]);
+		System.out.printf(": %.2f\n" , zh);
+		System.out.print(Array[3]);
+		System.out.printf(": %.2f\n" , zs);
+		System.out.print(Array[4]);
+		System.out.printf(": %.2f\n" , ze);
+		System.out.print(Array[5]);
+		System.out.printf(": %.2f\n" , zw);
+		System.out.print(Array[6]);
+		System.out.printf(": %.2f\n" , zo);
+		System.out.print(Array[7]);
+		System.out.printf(": %.2f\n" , zsc);
+		
+        System.out.println();
+       
+		return total;
+	}
+
+}
